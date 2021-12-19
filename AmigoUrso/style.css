@@ -1,0 +1,78 @@
+:root {
+    --fundo: #ff5555;
+    --texto: #ffdd22;
+    --link: #ffdd00;
+    --linkVisitado: #ffbb00;
+}
+
+header,
+nav,
+section {
+    display: block;
+}
+
+header {
+    margin-bottom: 1px;
+}
+
+nav {
+    width: 200px;
+    float: left;
+}
+
+section {
+    width: 70%;
+    float: right;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-size: 18px;
+    font-family: 'Lato', Georgia, serif;
+}
+
+nav {
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: 'Rubik', Verdana, liberation;
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--linkVisitado);
+}
+
+ol,
+ul {
+    line-height: 200%;
+}
+
+nav ul {
+    color: var(--texto);
+    line-height: 230%;
+    margin-top: 40px;
+    list-style: disc;
+}
+
+.ender {
+    text-align: right;
+    font-size: 14px;
+    line-height: 140%;
+    float: right
+}
+
+.imgLogo {
+    border-bottom: 3px solid;
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+}
+
+.apres {
+    text-align: center;
+    font-size: 18px;
+}

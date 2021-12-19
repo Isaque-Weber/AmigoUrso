@@ -1,0 +1,41 @@
+.tabDaBel {
+    border-collapse: collapse;
+    margin: 6px auto 10px;
+    color: #000066;
+    font-family: 'Rubik', Verdana, sans-serif;
+}
+
+th,
+td {
+    border: 3px solid #226699;
+    padding: 6px 12px;
+    color: black;
+    background-color: #FFCC44;
+    font-family: 'Rubik', sans-serif;
+}
+
+.titulo {
+    color: #FFFF00;
+    background-color: #228855;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+.linTH {
+    color: #FFF;
+    background-color: #22AA55;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.colTH {
+    color: #FFF;
+    background-color: #2299DD;
+    text-align: left;
+}
+
+.imgDaBel {
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,21 @@
+.titulo {
+    text-align: center;
+}
+.preco {
+    color: #EE0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.listaComMel {
+    width: 340px;
+    color: #AA0000;
+    background-color: #EECC88;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #000055;
+    margin: 0 auto 10px;
+    list-style: upper-roman;
+}
+.listaComMel ul {
+    color: #AA0000;
+    list-style: square;
+}

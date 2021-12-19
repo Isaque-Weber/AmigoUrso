@@ -1,0 +1,131 @@
+.divCompras {
+    width: 550px;
+    color: #2255AA;
+    background-color: #EEEEAA;
+    padding: 6px 6px 15px 6px;
+    font-size: 14px;
+    margin: 20px auto;
+    border: 2px solid #77CCDD;
+}
+
+
+/* Posicionamento e tamanho de elementos */
+
+.listaCompras {
+    width: 210px;
+    height: 160px;
+    float: right;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.colLabSelProd {
+    width: 230px;
+    height: 40px;
+    float: left;
+}
+
+.colSelProd {
+    width: 160px;
+    float: right;
+}
+
+.linhaProdSel {
+    width: 220px;
+    margin-bottom: 6px;
+    float: left;
+}
+
+.elemEsq {
+    display: block;
+    float: left;
+}
+
+.elemDir {
+    display: block;
+    float: right;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+
+/* Posicionamento de fieldset */
+
+.fsEsq {
+    float: left;
+    display: inline;
+    margin: 0px;
+}
+
+.fsDir {
+    float: right;
+    display: inline;
+    margin: 0px;
+}
+
+
+/* Tamanho de entrada de valores */
+
+.inpGrande {
+    width: 380px;
+}
+
+.inpMedio {
+    width: 80px;
+}
+
+.inpNCC {
+    width: 130px;
+}
+
+.inpTelef {
+    width: 90px;
+}
+
+.inpEnder {
+    width: 180px;
+    height: 50px;
+}
+
+.numDD {
+    width: 30px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+
+/* Posicionamento e tamanho de elementos do formulário */
+
+.divLinha {
+    width: 500px;
+    margin-bottom: 6px;
+}
+
+.colLabCrd {
+    width: 260px;
+    height: 40px;
+    float: left;
+}
+
+.colPri {
+    float: left;
+    display: block;
+    width: 90px;
+}
+
+.colPriCompras {
+    float: left;
+    display: block;
+    width: 86px;
+}
+
+.colPriPag {
+    float: left;
+    display: block;
+    width: 250px;
+}

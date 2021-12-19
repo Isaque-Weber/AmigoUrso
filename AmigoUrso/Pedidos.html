@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Amigo Urso</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="/Demais questões/assets/styles/global.css">
+    <link rel="stylesheet" href="/Demais questões/assets/styles/pedidos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <img class="imgLogo" src="./Images/AmigoUrso_topo.png">
+        <address class="ender">
+            Rua Apis Mellifera, 1<br>
+            Tel: (21) 91122-3344<br>
+            <u>contato@zangao.com.br</u>       
+        </address>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="AmigoUrso.html">Apresentação</a>
+            </li>
+            <li>
+                <a href="Demel.html">Mistura de Mel</a>
+            </li>
+            <li>
+                <a href="Dabel.html">Direto da Abelha</a>
+            </li>
+            <li>
+                <a href="Pedidos.html">Pedidos</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <section>
+        <div class="divCompras">
+            <form method="POST">
+
+                <!-- Legend = título -->
+
+                <legend> Compras</legend><br/>
+
+                <fieldset>
+                    <legend> Identificação&nbsp;</legend>
+
+                    <!-- Nome -->
+
+                    <div class="divLinha">
+                        <label class="colPri">Nome: </label>
+                        <input type="text" class="inpGrande" name="TxtNomeCompleto" />
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="divLinha">
+                        <label for="idEmail" class="colPri">E-mail:</label>
+                        <input id="idEmail" class="inpGrande" type="email" name="TxtEmail" required />
+                    </div>
+
+                    <!-- Endereço -->
+
+                    <div class="divLinha">
+                        <label class="colPri">Endereço: </label>
+                        <textarea name="TxtEnder" rows="2" class="inpEnder"></textarea>
+                        <fieldset class="fsDir">
+                            <legend>Genero:</legend>
+                            <label><input type="radio" name="TglSexo" value="M" checked />Mas</label>
+                            <label><input type="radio" name="TglSexo" value="F" />Fem</label>
+                            <label><input type="radio" name="TglSexo" value="O" />Outro</label>
+                        </fieldset>
+                    </div>
+
+                    <!-- Gênero -->
+
+                    <fieldset class="fsDir">
+                        <legend>Nacimento:</legend>
+                        <input type="number" name="TxtDiaNasc" min="1" max="31" class="numDD" /> /
+                        <input type="number" name="TxtMesNasc" min="1" max="12" class="numDD" /> /
+                        <input type="number" name="TxtAnoNasc" value="1990" min="1910" max="2003" class="numQD" />
+                    </fieldset>
+
+                    <!-- Contato -->
+
+                    <div class="divLinha">
+                        <label class="colPri">Telefone:</label>
+                        <input type="text" class="inpTelef" name="TxtTelefone" required />
+                    </div>
+                    <div class="divLinha">
+                        <label class="colPri">Celular:</label>
+                        <input type="text" class="inpTelef" name="TxtCelular" />
+                    </div>
+                </fieldset>
+
+                <!-- Fieldset para a seleção de produtos -->
+
+                <fieldset>
+                    <legend> Seleção de Produtos e Pagamento&nbsp;</legend>
+
+                    <!-- OBS: o label pode entrar como atributo, sendo o valor dele o que será mostrado na página -->
+
+                    <label class="colLabSelProd">
+                        <Select name="selProduto" class="colSelProd">
+                            <option>-------</option>
+                            <optgroup label="Iogurte">
+                                <option value="NatMel">Natural com mel (150g)</option>
+                                <option value="ZerLac">Zero lactose (150g)</option>
+                            <optgroup label="Balas">
+                                <option value="GenMel">Gengibre e mel (60g)</option>
+                                <option value="MelAni">Mel e Anis (60g)</option></optgroup>
+                            <optgroup label="Barra de Cereal">
+                                <option value="MelGra">Mel e Granola (25g)</option>
+                            <optgroup label="Pote de Mel">
+                                <option value="MelFloSil">Mel Flores Silvestres (350g)</option>
+                                <option value="MelEuc">Mel de Eucalipto (450g)</option>
+                                <option value="MelFloLar">Mel Flor de Laranja (750g)</option></optgroup>
+                            <optgroup label="Própolis">
+                                <option value="Extra">Extrato (30ml)</option>
+                                <option value="Spray">Spray</option></optgroup>
+                        </select>
+                    </label>
+
+                    <!-- Botão para comprar (O tributo 'value' que deu o nome desta vez) -->
+
+                    <input class="elemEsq" type="button" value="Comprar" /><br/>
+
+                    <textarea class="listaCompras" name="listaPedidos" readonly>
+                    </textarea>
+
+                    <!-- Fieldset para a área de cartões -->
+
+                    <fieldset class="fsEsq">
+
+                        <legend> Cartão&nbsp;</legend>
+
+                        <legend> Bandeira:</legend>
+
+                        <label><input type="radio" name="RadBand" checked />Visa</label>
+                        <label><input type="radio" name="RadBand" />Master</label>
+                        <label><input type="radio" name="RadBand" />Elo</label>
+
+                        <br/><br/><br/><br/>
+
+                        <!-- div que insere a seção com a validade do cartão, com os atributos 'max' e 'min', atribuindo o mês mínimo e máximo, e o ano mínimo e máximo, respectivamente. -->
+
+                        <div>
+                            <label class="colPriCompras" for="mesVal">Validade:</label>
+                            <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD" value="10" /> /
+                            <input type="number" name="TxtAnoVal" value="2021" min="2021" max="2030" class="numQD" />
+                        </div>
+
+                        <!-- div que insere o input para texto, destinado ao número do cartão. Foi necessário inserir um 'br' para ficar bem alinhado no fieldset -->
+                        <div>
+                            <br/>
+                            <label class="colPriCompras" for="numCar">Número:</label>
+                            <input type="text" name="TxtNumCard" class="inpNCC" id="numCar" />
+                        </div>
+
+                    </fieldset>
+                    <label class="elemDir" for="TxtTotal"><br/>Valor R$
+                        <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpMedio" />
+                    </label>
+                </fieldset>
+
+                <!-- na div botões, o valer 'reset', apaga todos os dados do formulário. -->
+
+                <div class="botoes">
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Limpar" />
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
